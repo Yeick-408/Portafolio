@@ -1,0 +1,247 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>YEISON | Programador Junior</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+  </head>
+  <body>
+    <!-- Barra de Navegación Principal -->
+    <header>
+      <div class="container header-content">
+        <div class="logo">
+          <span class="arturo">YEISON</span>
+          <span class="design-studio">PROGRAMADOR JUNIOR</span>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#" id="navSobreMi">Sobre Mí</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#" id="navContacto">Contacto</a></li>
+          </ul>
+        </nav>
+        <div class="header-icons">
+          <i class="fas fa-search"></i>
+          <div class="user-avatar-header"></div>
+        </div>
+      </div>
+    </header>
+
+    <div id="contactModal" class="modal-overlay">
+      <div class="modal-content contact-modal-box">
+        <button class="modal-close contact-close">&times;</button>
+        <div class="modal-header-content">
+          <h3>¡Conéctate conmigo!</h3>
+          <span class="modal-subtitle"
+            >Busca mis redes o contáctame directamente</span
+          >
+        </div>
+        <div class="contact-links-grid">
+          <a
+            href="https://linkedin.com/in/tu-usuario"
+            target="_blank"
+            class="contact-item"
+          >
+            <i class="fab fa-linkedin-in"></i>
+            <span>LinkedIn</span>
+          </a>
+          <a
+            href="https://instagram.com/tu-usuario"
+            target="_blank"
+            class="contact-item"
+          >
+            <i class="fab fa-instagram"></i>
+            <span>Instagram</span>
+          </a>
+          <a href="mailto:tu-correo@email.com" class="contact-item">
+            <i class="far fa-envelope"></i>
+            <span>yeisontorres.ab@academia.umb.edu.co</span>
+          </a>
+          <a href="tel:+573000000000" class="contact-item">
+            <i class="fas fa-phone-alt"></i>
+            <span>+57 313 634 4181</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sección Principal Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1>
+            ¡Hola! Soy Yeison Torres,<br />
+            Estudiante de Ingenieria <br />
+            de Software
+          </h1>
+          <p>
+            Transformando requerimientos lógicos en código de servidor limpio y
+            sistemas escalables.
+          </p>
+          <button class="btn-primary">VER MI TRABAJO</button>
+        </div>
+        <div class="hero-image-wrapper">
+          <!-- Reemplaza 'arturo_hero.jpg' con tu imagen -->
+          <img
+            src="path/to/your/arturo_hero.jpg"
+            alt="Yeison en su estudio"
+            class="hero-main-img"
+          />
+          <img
+            src="arturo_hero.jpg"
+            alt="Yeison en su estudio"
+            class="hero-main-img"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Cuadrícula de Proyectos -->
+    <section class="projects-grid">
+      <div class="container">
+        <div class="grid-item">
+          <div class="project-image placeholder-nova"></div>
+          <!-- Reemplaza con tu imagen -->
+          <div class="project-info">
+            <h3>NovaTech App | UX/UI Design</h3>
+            <p>Project 1</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="project-image placeholder-lumina"></div>
+          <!-- Reemplaza con tu imagen -->
+          <div class="project-info">
+            <h3>Lumina Brand Identity | Branding</h3>
+            <p>Project 2</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="project-image placeholder-ecoware"></div>
+          <!-- Reemplaza con tu imagen -->
+          <div class="project-info">
+            <h3>EcoWare Website | Web Design</h3>
+            <p>Project 3</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <div class="project-image placeholder-ecoware-app"></div>
+          <!-- Reemplaza con tu imagen -->
+          <div class="project-info">
+            <h3>EcoWare Website | App</h3>
+            <p>Project 1</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Acerca de Mí (Mini) -->
+    <section class="about-me-mini">
+      <div class="container">
+        <div class="about-mini-content">
+          <!-- Reemplaza 'arturo_small_avatar.jpg' con tu imagen -->
+          <div class="user-avatar-about"></div>
+          <div class="about-mini-text">
+            <h4>ACERCA DE MÍ</h4>
+            <p>Más sobre Yeison Torres | Apasionado por el back-end</p>
+          </div>
+          <button class="btn-secondary" id="openModalBtn">Saber más</button>
+        </div>
+      </div>
+    </section>
+    <!-- Ventana Emergente (Modal) de "Acerca de Mí" -->
+    <div id="aboutModal" class="modal-overlay">
+      <div class="modal-content">
+        <button class="modal-close about-close">&times;</button>
+        <div class="modal-header-content">
+          <div class="modal-avatar"></div>
+          <div>
+            <h3>Hola, soy Yeison Torres</h3>
+            <span class="modal-subtitle"
+              >Apasionado por el backend & desarrollo</span
+            >
+          </div>
+        </div>
+        <div class="modal-body">
+          <p>
+            Aquí puedes explayarte sobre tu trayectoria profesional, tus
+            tecnologías favoritas (Node.js, Python, bases de datos, APIs), y tu
+            enfoque para crear arquitecturas limpias y escalables.
+          </p>
+          <ul class="modal-skills">
+            <li>🚀 Arquitectura de Software</li>
+            <li>⚙️ Desarrollo de APIs Robustas</li>
+            <li>☁️ Cloud Computing & DevOps</li>
+          </ul>
+
+          <!-- Botón que abrirá el modal grande del CV -->
+          <div style="text-align: center; margin-top: 25px">
+            <button
+              id="openCvModalBtn"
+              class="btn-secondary"
+              style="width: 100%; padding: 12px; font-weight: 600"
+            >
+              <i class="fas fa-file-pdf"></i> Ver mi CV Completo
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2. NUEVO: Modal Extragrande y Exclusivo para el CV -->
+    <div id="cvModal" class="modal-overlay">
+      <div class="modal-content cv-modal-large">
+        <button class="modal-close cv-close">&times;</button>
+        <div class="modal-header-content">
+          <h3>Currículum Vítae</h3>
+          <span class="modal-subtitle">Yeison Torres - Programador Junior</span>
+        </div>
+        <div class="modal-body">
+          <!-- Visor del PDF en grande -->
+          <div class="cv-viewer-large">
+            <embed
+              src="files/YeisonTorresBotero.pdf"
+              type="application/pdf"
+              width="100%"
+              height="100%"
+            />
+          </div>
+          <!-- Botón de descarga directa -->
+          <div class="cv-download-action">
+            <a
+              href="files/YeisonTorresBotero.pdf"
+              download="CV_Yeison_Torres_Botero.pdf"
+              class="btn-download-cv"
+            >
+              <i class="fas fa-download"></i> Descargar CV en PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Pie de Página -->
+    <footer>
+      <div class="container footer-content">
+        <div class="contact-info">
+          <p>CONÉCTAME</p>
+          <div class="social-icons">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+          </div>
+          <p><i class="far fa-envelope"></i> yeisontorres.ab@academia.umb.edu.co</p>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 YEISON | All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
